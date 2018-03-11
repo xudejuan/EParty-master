@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.liu.eparty">
+
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入缓存定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- autoLayout -->
+        <meta-data
+            android:name="design_width"
+            android:value="768" />
+        <meta-data
+            android:name="design_height"
+            android:value="1280" />
+
+        <!-- amap -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="dfad87ebe3253a8a42dbbda66219f130" />
+
+        <service android:name="com.amap.api.location.APSService" />
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:theme="@style/TransparentTheme" />
+        <activity android:name=".activity.login.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.login.AuthenticationActivity" />
+        <activity android:name=".activity.login.ResetPasswordActivity" />
+        <activity android:name=".activity.login.RegisterActivity" />
+        <activity android:name=".activity.news.NewsActivity" />
+        <activity android:name=".activity.organization.OrganizationActivity" />
+        <activity
+            android:name=".activity.task.TaskActivity"
+            android:theme="@style/TransparentTheme" />
+        <activity android:name=".activity.meeting.MeetingActivity" />
+        <activity android:name=".activity.statistics.StatisticsActivity" >
+
+        </activity>
+        <activity android:name=".activity.archive.ArchiveActivity" />
+        <activity android:name=".activity.mine.MineActivity" />
+        <activity android:name=".activity.organization.FlowMemberActivity" />
+        <activity android:name=".activity.task.ShowTaskActivity" />
+        <activity android:name=".activity.task.ShowTaskDetailActivity" />
+        <activity android:name=".activity.task.AddOrganizationTaskActivity" />
+        <activity android:name=".activity.task.AddPlanActivity" />
+        <activity android:name=".activity.task.ShowPlanActivity" />
+        <activity android:name=".activity.task.AddReportActivity" />
+        <activity android:name=".activity.task.ShowReportActivity" />
+        <activity android:name=".activity.task.CheckPlanActivity" />
+        <activity android:name=".activity.meeting.MeetingOperateActivity" />
+        <activity android:name=".activity.meeting.ShowMeetingDetailActivity" />
+        <activity android:name=".activity.meeting.CommentActivity" />
+        <activity android:name=".activity.meeting.UploadRecordActivity" />
+        <activity android:name=".activity.meeting.CheckRecordActivity" />
+        <activity android:name=".activity.meeting.ShowMeetingActivity" />
+        <activity android:name=".activity.meeting.CheckRecordDetailActivity" />
+        <activity android:name=".activity.statistics.MeetingIndividualStatisticsActivity" />
+        <activity android:name=".activity.statistics.MeetingOrganizationStatisticsActivity" />
+        <activity android:name=".activity.meeting.ChoosePlaceActivity" />
+        <activity android:name=".activity.statistics.IndividualMeetingStatisticsActivity" />
+        <activity android:name=".activity.statistics.TaskOrganizationStatisticsActivity" />
+        <activity android:name=".activity.statistics.OrganizationMeetingStatisticsActivity" />
+        <activity android:name=".activity.statistics.OrganizationParticipateStatisticsActivity" />
+        <activity android:name=".activity.task.IssueTaskActivity" />
+        <activity android:name=".activity.task.IssueTaskDetailActivity" />
+        <activity android:name=".activity.task.PreviewPhotoActivity" />
+        <activity android:name=".activity.task.PreviewVideoActivity" />
+        <activity android:name=".activity.task.CheckReportActivity" />
+        <activity android:name=".activity.meeting.SearchAddressActivity" />
+        <activity android:name=".TestActivity"></activity>
+        <activity android:name=".activity.mine.MemberActivity" >
+
+        </activity>
+        <activity android:name=".activity.meeting.AddMeetingActivity" />
+        <activity android:name=".activity.task.ChooseMemberActivity" />
+        <activity android:name=".activity.task.MultiChooseOrganizationActivity" />
+        <activity android:name=".activity.task.AddIndividualTaskActivity" />
+        <activity android:name=".activity.mine.AddMemberActivity" />
+        <activity android:name=".activity.statistics.OrganizationTaskStatisticsActivity" />
+        <activity android:name=".activity.task.SearchActivity" />
+        <activity android:name=".activity.statistics.SingleChooseOrganizationActivity" />
+        <activity android:name=".activity.meeting.QrcodeActivity" />
+        <activity android:name=".activity.task.SelectMemberActivity" />
+        <activity android:name=".activity.task.ShowWarningActivity" >
+
+        </activity>
+        <activity android:name=".activity.task.ShowWarningDetailActivity" />
+
+        <activity android:name=".activity.login.FlowLoginActivity" />
+        <activity android:name=".activity.task.IssueTaskRecipientActivity"/>
+    </application>
+
+</manifest>

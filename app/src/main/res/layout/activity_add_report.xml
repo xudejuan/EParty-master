@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.liu.eparty.activity.task.AddReportActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/view25"
+            android:layout_width="2dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/blue_deep"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/add_report"
+            android:textColor="@color/blue_deep"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view25"
+            app:layout_constraintStart_toEndOf="@+id/view25"
+            app:layout_constraintTop_toTopOf="@+id/view25"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <View
+            android:id="@+id/view26"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view25" />
+
+        <ImageView
+            android:id="@+id/imageView22"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="@+id/textView39"
+            app:layout_constraintTop_toBottomOf="@+id/view26"
+            app:srcCompat="@mipmap/attachment" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/attachment2"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView22"
+            app:layout_constraintStart_toEndOf="@+id/imageView22"
+            app:layout_constraintTop_toTopOf="@+id/imageView22" />
+
+
+        <TextView
+            android:id="@+id/add_report_file_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView28"
+            app:layout_constraintEnd_toStartOf="@+id/add_report_file"
+            app:layout_constraintStart_toEndOf="@+id/textView28"
+            app:layout_constraintTop_toTopOf="@+id/textView28"
+            tools:text="TextView.xls" />
+
+        <Button
+            android:id="@+id/add_report_file"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/choose_file"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:background="@drawable/style_button_solid"
+            app:layout_constraintBottom_toBottomOf="@+id/add_report_file_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/add_report_file_name" />
+
+        <ImageView
+            android:id="@+id/imageView31"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="@+id/imageView22"
+            app:layout_constraintTop_toBottomOf="@+id/imageView22"
+            app:srcCompat="@mipmap/picture" />
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/picture"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView31"
+            app:layout_constraintStart_toEndOf="@+id/imageView31"
+            app:layout_constraintTop_toTopOf="@+id/imageView31" />
+
+        <ImageView
+            android:id="@+id/add_report_picture1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/imageView31"
+            app:layout_constraintTop_toBottomOf="@+id/imageView31"
+            app:srcCompat="@mipmap/add_picture" />
+
+        <ImageView
+            android:id="@+id/add_report_picture2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/add_report_picture1"
+            app:layout_constraintStart_toEndOf="@+id/add_report_picture1"
+            app:layout_constraintTop_toTopOf="@+id/add_report_picture1"
+            app:srcCompat="@mipmap/add_picture" />
+
+        <ImageView
+            android:id="@+id/add_report_picture3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/add_report_picture2"
+            app:layout_constraintStart_toEndOf="@+id/add_report_picture2"
+            app:layout_constraintTop_toTopOf="@+id/add_report_picture2"
+            app:srcCompat="@mipmap/add_picture" />
+
+        <ImageView
+            android:id="@+id/imageView35"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="@+id/add_report_picture1"
+            app:layout_constraintTop_toBottomOf="@+id/add_report_picture1"
+            app:srcCompat="@mipmap/video" />
+
+        <TextView
+            android:id="@+id/textView45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/video"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView35"
+            app:layout_constraintStart_toEndOf="@+id/imageView35"
+            app:layout_constraintTop_toTopOf="@+id/imageView35" />
+
+        <ImageView
+            android:id="@+id/add_report_video"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/imageView35"
+            app:layout_constraintTop_toBottomOf="@+id/imageView35"
+            app:srcCompat="@mipmap/add_picture" />
+
+        <ImageView
+            android:id="@+id/play"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintBottom_toBottomOf="@+id/add_report_video"
+            app:layout_constraintEnd_toEndOf="@+id/add_report_video"
+            app:layout_constraintStart_toStartOf="@+id/add_report_video"
+            app:layout_constraintTop_toTopOf="@+id/add_report_video"
+            app:srcCompat="@mipmap/play" />
+
+        <ImageView
+            android:id="@+id/imageView38"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="@+id/add_report_video"
+            app:layout_constraintTop_toBottomOf="@+id/add_report_video"
+            app:srcCompat="@mipmap/content" />
+
+        <TextView
+            android:id="@+id/textView54"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/content"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView38"
+            app:layout_constraintStart_toEndOf="@+id/imageView38"
+            app:layout_constraintTop_toTopOf="@+id/imageView38" />
+
+        <EditText
+            android:id="@+id/add_report_content"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/style_view"
+            android:gravity="start"
+            android:hint="@string/input"
+            android:inputType="text"
+            android:padding="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/imageView38"
+            app:layout_constraintTop_toBottomOf="@+id/textView54" />
+
+        <Button
+            android:id="@+id/add_report_submit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/style_button_solid"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/add_report_content"
+            app:layout_constraintStart_toStartOf="@+id/add_report_content"
+            app:layout_constraintTop_toBottomOf="@+id/add_report_content" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
